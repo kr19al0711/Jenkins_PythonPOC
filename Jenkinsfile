@@ -12,7 +12,7 @@ pipeline{
         stage('Running Health Check Script')
         {
             steps{
-                sh''''
+                sh'''
                 sudo chmod +x health_check.py
                 ./health_check.py
                 '''
