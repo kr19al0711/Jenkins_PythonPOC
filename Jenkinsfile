@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label 'agent1'
+        label 'main'
     }
     stages{
         stage('Checkout SCM') {
