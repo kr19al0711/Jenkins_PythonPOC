@@ -2,7 +2,6 @@ pipeline{
     node{
         label 'agent1'
     }
-
     stage('Checkout SCM') {
         
         cleanWs()
