@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label 'agent'
-    }
+    agent any
     stages{
         stage('Checkout SCM') {
            steps{
@@ -12,10 +10,7 @@ pipeline{
         stage('Running Health Check Script')
         {
             steps{
-                sh'''
-                sudo chmod +x health_check.py
-                ./health_check.py
-                '''
+                powershell ''' python.exe ./health_check.py '''
             }
         }
     }
