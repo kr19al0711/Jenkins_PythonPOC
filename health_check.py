@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import shutil
-import psutil
 import os
 
 path = os.cwd()
